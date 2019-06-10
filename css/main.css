@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	margin: 0;
 	color: #222222;
+	overflow-x: 0;
 }
 
 .clearfix:after {
@@ -56,6 +57,13 @@ nav {
 	font-size: 14px;
 }
 
+.titles {
+	-webkit-animation-delay: 0.2s;
+ 	 -o-animation-delay: 0.2s;
+  	-moz-animation-delay: 0.2s;
+  	animation-delay: 0.2s;
+}
+
 .titles__first {
 	font-size: 40px;
 	color: #fff;
@@ -73,6 +81,10 @@ h1 {
 }
 
 .button {
+	-webkit-animation-delay: 0.2s;
+ 	 -o-animation-delay: 0.2s;
+  	-moz-animation-delay: 0.2s;
+  	animation-delay: 0.2s;
 	background: #fed136;
 	color: #484543;
 	border-radius: 3px;
