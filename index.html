@@ -7,26 +7,26 @@
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-	<header>
+	<header id="home">
 		<div class="container">
 			<div class="heading clearfix">
 				<img src="img/logo.png" alt="Golden" class="logo">
 				<nav>
 					<ul class="menu">
 						<li>
-							<a href="#">Home</a>
+							<a href="#home">Home</a>
 						</li>
 						<li>
-							<a href="#">Services</a>
+							<a href="#services">Services</a>
 						</li>
 						<li>
-							<a href="#">Portfolio</a>
+							<a href="#portfolio">Portfolio</a>
 						</li>
 						<li>
-							<a href="#">About</a>
+							<a href="#about">About</a>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a href="#contacts">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -39,7 +39,7 @@
 					It’s nice to Meet you
 				</h1>
 			</div>
-			<a class="button animated fadeInUp" href="#">Tell Me More</a>
+			<a class="button book animated fadeInUp" href="#">Tell Me More</a>
 		</div>
 	</header>
 
@@ -93,9 +93,9 @@
 				</p>
 			</div>
 			<div class="works clearfix">
-				<img src="img/img1.jpg" alt="Работа">
-				<img src="img/img2.jpg" alt="Работа">
-				<img src="img/img3.jpg" alt="Работа">
+				<img src="img/img1.jpg" alt="Работа" class="work1">
+				<img src="img/img2.jpg" alt="Работа" class="work2">
+				<img src="img/img3.jpg" alt="Работа" class="work3">
 			</div>
 		</div>
 	</section>
@@ -153,13 +153,69 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="container">
-			<div class="footer">
-				<p>© Copyright 2014 FreebiesXpress.com</p>
+	<section id="contacts">
+			<div class="contacts">
+				<div class="title">
+					<h2>Contacts</h2>
+					<p>Proin iaculis purus consequat sem cure.</p>
+				</div>
+					<div class="map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa50301c94729a98d93c62b2fce6c29c56b46456396179351eefe0c3511d1471f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+				<div class="container">
+					<div class="socials">
+						<div class="title">
+							<p>You can find us in social media:</p>
+						</div>
+						<div class="social__items">
+							<a href="https://instagram.com"><img src="img/Instagram.png" alt="instagram"></a>
+							<a href="https://youtube.com"><img src="img/youtube.png" alt="youtube"></a>
+							<a href="https://twitter.com"><img src="img/twitter.png" alt="twitter"></a>
+							<a href="https://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+			
+	</section>
+	<footer>
+		<div class="footer">
+			<p>© Copyright 2019 LOmger</p>
+		</div>	
 	</footer>
+	<section id="form" class="form">
+		<div class="modal">
+			<div class="overlay">
+				<div class="modal__body">
+					<h2 class="modal__header">Form</h2>
+						<form id="contactForm" action="#" method="post">
+							<div class="field-block">
+								<label for="name">Your Name:</label>
+								<input id="name" class="field" name="name" required type="text" placeholder="Иванов Иван Иванович">
+							</div>
+							<div class="field-block">
+								<label for="email">Your E-mail:</label>
+								<input id="email" class="field" name="email" required type="email" placeholder="ivanov@email.com">
+							</div>
+							<div class="field-block">
+								<label for="phone">Your phone:</label>
+								<input id="phone" class="field" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
+							</div>
+							<div class="field-block">
+								<label for="message">Text message:</label>
+								<textarea id="message" class="field" required name="message" rows="4"></textarea>
+							</div>
+							<button id="button" class=" button btn" type="submit">Send</button>
+							<div class="result">
+								<span id="answer"></span>
+								<span id="loader"><img src="images/loader.gif" alt=""></span>
+							</div>
+						</form>
+				</div>
+	 		</div>
+		</div>
+	</section>
+
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
